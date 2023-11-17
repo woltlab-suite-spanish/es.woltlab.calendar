@@ -38,9 +38,9 @@
 		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que sólo estén en esta categoría serán eliminados.]]></item>
 		<item name="calendar.category.export.download"><![CDATA[Descargar como archivo]]></item>
 		<item name="calendar.category.export.url"><![CDATA[URL]]></item>
-		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirse con tu software de calendario favorito.]]></item>
-		<item name="calendar.category.export.url.participant"><![CDATA[URL (Participating Events Only)]]></item>
-		<item name="calendar.category.export.url.participant.description"><![CDATA[Restricts list to events that you (may) participate in.]]></item>
+		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirte con tu software de calendario favorito.]]></item>
+		<item name="calendar.category.export.url.participant"><![CDATA[URL (sólo eventos participantes)]]></item>
+		<item name="calendar.category.export.url.participant.description"><![CDATA[Restringe la lista a los eventos en los que participar o puedes participar.]]></item>
 		<item name="calendar.category.eventColor"><![CDATA[Color]]></item>
 		<item name="calendar.category.eventColor.button.reset"><![CDATA[Restablecer color]]></item>
 	</category>
@@ -122,7 +122,7 @@
 		<item name="calendar.event.date.repeat.dayOffset.third"><![CDATA[Tercero]]></item>
 		<item name="calendar.event.date.repeat.dayOffset.fourth"><![CDATA[Cuarto]]></item>
 		<item name="calendar.event.date.repeat.dayOffset.last"><![CDATA[Último]]></item>
-		<item name="calendar.event.date.repeat.end.type"><![CDATA[Repetition End]]></item>
+		<item name="calendar.event.date.repeat.end.type"><![CDATA[Fin de la repetición]]></item>
 		<item name="calendar.event.date.repeat.end.type.unlimited"><![CDATA[Nunca]]></item>
 		<item name="calendar.event.date.repeat.end.type.date"><![CDATA[Fecha]]></item>
 		<item name="calendar.event.date.repeat.end.type.count"><![CDATA[Número de repeticiones]]></item>
@@ -271,12 +271,12 @@
 		<item name="calendar.event.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="calendar.event.condition.category"><![CDATA[Categoría]]></item>
 		<item name="calendar.event.condition.isFeatured"><![CDATA[Sólo eventos destacados]]></item>
-		<item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[Active user is participant]]></item>
+		<item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[El usuario activo es el participante]]></item>
 		<item name="calendar.event.date.cancel"><![CDATA[Cancelar fecha]]></item>
 		<item name="calendar.event.date.cancel.confirmMessage"><![CDATA[¿Realmente quieres cancelar esta fecha? Esta acción no se puede deshacer.]]></item>
 		<item name="calendar.event.date.canceled"><![CDATA[Esta fecha ha sido cancelada]]></item>
 		<item name="calendar.event.date.canceled.detail"><![CDATA[Esta fecha ha sido cancelada {if $eventDate->canceledByUsername}por {if $eventDate->canceledByUserID}<a href="{link controller='User' id=$eventDate->canceledByUserID title=$eventDate->canceledByUsername}{/link}" class="userLink" data-user-id="{@$eventDate->canceledByUserID}">{$eventDate->canceledByUsername}</a>{else}{$eventDate->canceledByUsername}{/if} {/if}el {@$eventDate->cancelTime|plainTime}{if $eventDate->cancelReason} por el siguiente motivo: {$eventDate->cancelReason}{/if}.]]></item>
-		<item name="calendar.event.date.overlapping"><![CDATA[These events take place during this period:]]></item>
+		<item name="calendar.event.date.overlapping"><![CDATA[Estos acontecimientos tienen lugar durante este periodo:]]></item>
 		<item name="calendar.event.pastEvents"><![CDATA[Eventos anteriores]]></item>
 		<item name="calendar.event.notification.title"><![CDATA[Nuevo evento]]></item>
 		<item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> ha creado el evento <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
@@ -306,14 +306,14 @@
 		<item name="wcf.acl.option.com.woltlab.calendar.category.canViewCategory"><![CDATA[Puede ver la categoría]]></item>
 	</category>
 	<category name="wcf.acp.box">
-		<item name="wcf.acp.box.boxController.com.woltlab.calendar.tagCloud"><![CDATA[Calendar Tags]]></item>
-		<item name="wcf.acp.box.boxController.com.woltlab.calendar.eventDateList"><![CDATA[Calendar Events]]></item>
-		<item name="wcf.acp.box.boxController.com.woltlab.calendar.commentList"><![CDATA[Calendar Event Comments]]></item>
-		<item name="wcf.acp.box.boxController.com.woltlab.calendar.currentMonth"><![CDATA[Current Calendar Month]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.calendar.tagCloud"><![CDATA[Tags del calendario]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.calendar.eventDateList"><![CDATA[Eventos del calendario]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.calendar.commentList"><![CDATA[Comentarios de eventos del calendario]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.calendar.currentMonth"><![CDATA[Mes del calendario en curso]]></item>
 	</category>
 	<category name="wcf.acp.content">
 		<item name="wcf.acp.content.provider.com.woltlab.calendar.event"><![CDATA[Eventos]]></item>
-		<item name="wcf.acp.content.provider.com.woltlab.calendar.eventDateParticipation"><![CDATA[Event Participations]]></item>
+		<item name="wcf.acp.content.provider.com.woltlab.calendar.eventDateParticipation"><![CDATA[Participaciones en eventos]]></item>
 	</category>
 	<category name="wcf.acp.dataImport">
 		<item name="wcf.acp.dataImport.data.com.woltlab.calendar.event"><![CDATA[Eventos]]></item>
