@@ -80,7 +80,7 @@
 		<item name="calendar.event.date.participation.user.description"><![CDATA[Puedes añadir usuarios adicionales especificando su nombre de usuario y seleccionando una opción a continuación.]]></item>
 		<item name="calendar.event.date.participation.user.error.alreadyParticipating"><![CDATA[“{$participant->username}” has already decided to participate.]]></item>
 		<item name="calendar.event.date.participation.decision"><![CDATA[Participación]]></item>
-		<item name="calendar.event.date.participation.decision.yes"><![CDATA[Yes{if !$canParticipate} (not possible){/if}]]></item>
+		<item name="calendar.event.date.participation.decision.yes"><![CDATA[Sí{if !$canParticipate} (no es posible){/if}]]></item>
 		<item name="calendar.event.date.participation.decision.no"><![CDATA[No]]></item>
 		<item name="calendar.event.date.participation.decision.maybe"><![CDATA[Tal vez]]></item>
 		<item name="calendar.event.date.participation.companions"><![CDATA[Acompañantes]]></item>
