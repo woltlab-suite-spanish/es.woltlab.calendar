@@ -379,7 +379,7 @@
 		<item name="wcf.acp.option.category.calendar.index"><![CDATA[Índice del calendario]]></item>
 		<item name="wcf.acp.option.category.calendar.event"><![CDATA[Eventos]]></item>
 		<item name="wcf.acp.option.calendar_index_enable_birthday_month"><![CDATA[Mostrar cumpleaños en la vista de mes]]></item>
-		<item name="wcf.acp.option.calendar_index_enable_stats"><![CDATA[Mostrar estadísticas de calendario]]></item>
+		<item name="wcf.acp.option.calendar_index_enable_stats"><![CDATA[Mostrar estadísticas del calendario]]></item>
 		<item name="wcf.acp.option.calendar_message_sidebar_enable_user_events"><![CDATA[Mostrar el número de eventos del autor]]></item>
 		<item name="wcf.acp.option.calendar_max_event_length"><![CDATA[Período de tiempo máximo]]></item>
 		<item name="wcf.acp.option.calendar_max_event_length.description"><![CDATA[Los eventos pueden tener lugar durante los siguientes días.]]></item>
