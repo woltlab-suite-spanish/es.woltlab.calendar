@@ -35,7 +35,7 @@
 	</category>
 	<category name="calendar.category">
 		<item name="calendar.category.button.export"><![CDATA[Exportar eventos (iCal)]]></item>
-		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que sólo estén en esta categoría serán eliminados.]]></item>
+		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que sólo pertenezcan a esta categoría serán eliminados.]]></item>
 		<item name="calendar.category.export.download"><![CDATA[Descargar como archivo]]></item>
 		<item name="calendar.category.export.url"><![CDATA[URL]]></item>
 		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirte con tu software de calendario favorito.]]></item>
