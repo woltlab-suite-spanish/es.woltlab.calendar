@@ -14,7 +14,7 @@
 		<item name="calendar.acp.event.option.add"><![CDATA[Añadir campo de opción]]></item>
 		<item name="calendar.acp.event.option.availability"><![CDATA[Disponibilidad]]></item>
 		<item name="calendar.acp.event.option.categoryIDs"><![CDATA[Categorías]]></item>
-		<item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[El campo de opción sólo está disponible para los eventos de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías. Después de guardar, las categorías seleccionadas ya no se pueden deseleccionar.]]></item>
+		<item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los eventos de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías. Después de guardar, las categorías seleccionadas ya no se pueden deseleccionar.]]></item>
 		<item name="calendar.acp.event.option.edit"><![CDATA[Editar campo de opción]]></item>
 		<item name="calendar.acp.event.option.list"><![CDATA[Campos de opción]]></item>
 	</category>
@@ -35,11 +35,11 @@
 	</category>
 	<category name="calendar.category">
 		<item name="calendar.category.button.export"><![CDATA[Exportar eventos (iCal)]]></item>
-		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que sólo pertenezcan a esta categoría serán eliminados.]]></item>
+		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que solo pertenezcan a esta categoría serán eliminados.]]></item>
 		<item name="calendar.category.export.download"><![CDATA[Descargar como archivo]]></item>
 		<item name="calendar.category.export.url"><![CDATA[URL]]></item>
 		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirte con tu software de calendario favorito.]]></item>
-		<item name="calendar.category.export.url.participant"><![CDATA[URL (sólo eventos participantes)]]></item>
+		<item name="calendar.category.export.url.participant"><![CDATA[URL (solo eventos participantes)]]></item>
 		<item name="calendar.category.export.url.participant.description"><![CDATA[Restringe la lista a los eventos en los que participar o puedes participar.]]></item>
 		<item name="calendar.category.eventColor"><![CDATA[Color]]></item>
 		<item name="calendar.category.eventColor.button.reset"><![CDATA[Restablecer color]]></item>
@@ -71,7 +71,7 @@
 		<item name="calendar.event.date.end"><![CDATA[Fin]]></item>
 		<item name="calendar.event.date.end.local"><![CDATA[Fin (Hora local)]]></item>
 		<item name="calendar.event.date.end.error.invalid"><![CDATA[La fecha de fin introducida no es válida. Debe ser posterior a la fecha de inicio.]]></item>
-		<item name="calendar.event.date.end.error.tooLong"><![CDATA[Tu evento ha superado el periodo de tiempo máximo, un evento sólo puede tener lugar hasta {#CALENDAR_MAX_EVENT_LENGTH} días sucesivos.]]></item>
+		<item name="calendar.event.date.end.error.tooLong"><![CDATA[Tu evento ha superado el periodo de tiempo máximo, un evento solo puede tener lugar hasta {#CALENDAR_MAX_EVENT_LENGTH} días sucesivos.]]></item>
 		<item name="calendar.event.date.timezone"><![CDATA[Zona horaria]]></item>
 		<item name="calendar.event.date.local"><![CDATA[Hora local]]></item>
 		<item name="calendar.event.date.participation"><![CDATA[Gestionar participación]]></item>
@@ -93,7 +93,7 @@
 		<item name="calendar.event.date.participation.inviteUsers"><![CDATA[Invitar usuarios]]></item>
 		<item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[No se han encontrado los siguientes usuarios: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
 		<item name="calendar.event.date.participation.inviteUserGroup"><![CDATA[Invitar grupo de usuarios]]></item>
-		<item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[Sólo puedes invitar a grupos de usuarios con un máximo de {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} miembros.]]></item>
+		<item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[Solo puedes invitar a grupos de usuarios con un máximo de {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} miembros.]]></item>
 		<item name="calendar.event.date.participation.removeParticipant"><![CDATA[Eliminar participante]]></item>
 		<item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[¿Realmente quieres eliminar a <span class="confirmationObject">{$participant->username}</span> de este evento?]]></item>
 		<item name="calendar.event.date.participation.companions.error.exceededMaxCompanions"><![CDATA[Has superado el número máximo de acompañantes.]]></item>
@@ -270,7 +270,7 @@
 		<item name="calendar.event.sortField.views"><![CDATA[Visitas]]></item>
 		<item name="calendar.event.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="calendar.event.condition.category"><![CDATA[Categoría]]></item>
-		<item name="calendar.event.condition.isFeatured"><![CDATA[Sólo eventos destacados]]></item>
+		<item name="calendar.event.condition.isFeatured"><![CDATA[Solo eventos destacados]]></item>
 		<item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[El usuario activo es el participante]]></item>
 		<item name="calendar.event.date.cancel"><![CDATA[Cancelar fecha]]></item>
 		<item name="calendar.event.date.cancel.confirmMessage"><![CDATA[¿Realmente quieres cancelar esta fecha? Esta acción no se puede deshacer.]]></item>
@@ -282,8 +282,8 @@
 		<item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> ha creado el evento <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
 		<item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} ha creado el evento “{@$eventDate->getTitle()}” ({$eventDate->getFormattedTimeFrame()}) [URL:{@$eventDate->getLink()}]:]]></item>
 		<item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> ha creado el evento <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-		<item name="calendar.event.participation.inviteOnly"><![CDATA[Sólo con invitación]]></item>
-		<item name="calendar.event.participation.inviteOnly.description"><![CDATA[Sólo los usuarios invitados a este evento pueden participar en él.]]></item>
+		<item name="calendar.event.participation.inviteOnly"><![CDATA[Solo con invitación]]></item>
+		<item name="calendar.event.participation.inviteOnly.description"><![CDATA[Solo los usuarios invitados a este evento pueden participar en él.]]></item>
 		<item name="calendar.event.options"><![CDATA[Información adicional]]></item>
 		<item name="calendar.event.date.changeTime"><![CDATA[Cambiar hora]]></item>
 		<item name="calendar.event.date.changeTime.info"><![CDATA[Estás editando la hora de un evento individual de una serie de eventos. Las horas de todos los demás eventos no cambian.]]></item>
