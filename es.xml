@@ -386,7 +386,7 @@
 		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
 		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle.description"><![CDATA[Los eventos se eliminan de la papelera en los días siguientes. Utiliza 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.calendar_event_invite_group_max_size"><![CDATA[Tamaño máximo de los grupos de usuarios invitables]]></item>
-		<item name="wcf.acp.option.calendar_event_invite_group_max_size.description"><![CDATA[Tenga cuidado al invitar a grupos grandes de usuarios, ya que requiere el envío de más notificaciones por correo electrónico. Utiliza un valor conservador, de lo contrario, el proceso podría agotarse.]]></item>
+		<item name="wcf.acp.option.calendar_event_invite_group_max_size.description"><![CDATA[Ten cuidado al invitar a grupos de usuarios grandes, ya que requiere el envío de más notificaciones por correo electrónico. Utiliza un valor conservador, de lo contrario, el proceso podría interrumpirse.]]></item>
 		<item name="wcf.acp.option.calendar_enable_birthday_week"><![CDATA[Mostrar cumpleaños en la vista de semana]]></item>
 		<item name="wcf.acp.option.calendar_enable_birthday_day"><![CDATA[Mostrar cumpleaños en la vista de día]]></item>
 	</category>
