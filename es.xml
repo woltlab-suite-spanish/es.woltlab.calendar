@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="es" languagename="Español" countrycode="es">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd" languagecode="es">
 <import>
 	<category name="calendar.acp.menu">
 		<item name="calendar.acp.menu.link.calendar"><![CDATA[Calendario]]></item>
@@ -13,7 +13,6 @@
 	<category name="calendar.acp.event">
 		<item name="calendar.acp.event.option.add"><![CDATA[Añadir campo de opción]]></item>
 		<item name="calendar.acp.event.option.availability"><![CDATA[Disponibilidad]]></item>
-		<item name="calendar.acp.event.option.categoryIDs"><![CDATA[Categorías]]></item>
 		<item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los eventos de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías. Después de guardar, las categorías seleccionadas ya no se pueden deseleccionar.]]></item>
 		<item name="calendar.acp.event.option.edit"><![CDATA[Editar campo de opción]]></item>
 		<item name="calendar.acp.event.option.list"><![CDATA[Campos de opción]]></item>
@@ -62,7 +61,6 @@
 		<item name="calendar.event.edit"><![CDATA[Editar evento]]></item>
 		<item name="calendar.event.information"><![CDATA[Detalles]]></item>
 		<item name="calendar.event.generalInformation"><![CDATA[General]]></item>
-		<item name="calendar.event.categories"><![CDATA[Categorías]]></item>
 		<item name="calendar.event.date"><![CDATA[Fecha]]></item>
 		<item name="calendar.event.date.isFullDay"><![CDATA[Todo el día]]></item>
 		<item name="calendar.event.date.start"><![CDATA[Inicio]]></item>
@@ -179,10 +177,10 @@
 		<item name="calendar.event.unsetAsFeatured"><![CDATA[Eliminar marca de destacado]]></item>
 		<item name="calendar.event.moderation.info"><![CDATA[Los eventos recién creados permanecerán inaccesibles hasta que sean aprobados por un moderador.]]></item>
 		<item name="calendar.event.moderation.redirect"><![CDATA[Tu evento ha sido creado y se mostrará una vez sea aprobado.]]></item>
-		<item name="calendar.event.recentActivity.event"><![CDATA[Ha creado el evento {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'} ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
-		<item name="calendar.event.recentActivity.likedEvent"><![CDATA[Ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> al evento {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
-		<item name="calendar.event.recentActivity.eventDateComment"><![CDATA[Ha comentado el evento {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-		<item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[Ha respondido a un comenterio de {user object=$commentAuthor} en el evento {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+		<item name="calendar.event.recentActivity.event"><![CDATA[<strong>{$author}</strong> ha creado el evento {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$event->getTitle()} ({$event->getFirstEventDate()->getFormattedTimeFrame()})</strong>.]]></item>
+		<item name="calendar.event.recentActivity.likedEvent"><![CDATA[<strong>{$author}</strong> ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> al evento {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$event->getTitle()}</strong>.]]></item>
+		<item name="calendar.event.recentActivity.eventDateComment"><![CDATA[<strong>{$author}</strong> ha comentado en el evento {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$eventDate->getTitle()}</strong>.]]></item>
+		<item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[<strong>{$author}</strong> ha respondido a un comentario de <strong>{$commentAuthor}</strong> en el evento {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$eventDate->getTitle()}</strong>.]]></item>
 		<item name="calendar.event.date.invite.notification.title"><![CDATA[Invitación a evento]]></item>
 		<item name="calendar.event.date.invite.notification.message"><![CDATA[<strong>{$author}</strong> te ha invitado al evento <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
 		<item name="calendar.event.date.invite.notification.mail.plaintext"><![CDATA[{@$author} te ha invitado al evento “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}):]]></item>
@@ -262,14 +260,12 @@
 		<item name="calendar.event.yearlyView"><![CDATA[Vista de año]]></item>
 		<item name="calendar.event.eventComments"><![CDATA[{@$eventDate->comments|shortUnit} comentario{if $eventDate->comments != 1}s{/if}]]></item>
 		<item name="calendar.event.eventViews"><![CDATA[{@$event->views|shortUnit} visita{if $event->views != 1}s{/if}]]></item>
-		<item name="calendar.event.category"><![CDATA[Categoría]]></item>
 		<item name="calendar.event.category.error.invalid"><![CDATA[La categoría seleccionada no es válida.]]></item>
 		<item name="calendar.event.sortField.subject"><![CDATA[Título]]></item>
 		<item name="calendar.event.sortField.startTime"><![CDATA[Fecha]]></item>
 		<item name="calendar.event.sortField.comments"><![CDATA[Comentarios]]></item>
 		<item name="calendar.event.sortField.views"><![CDATA[Visitas]]></item>
 		<item name="calendar.event.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
-		<item name="calendar.event.condition.category"><![CDATA[Categoría]]></item>
 		<item name="calendar.event.condition.isFeatured"><![CDATA[Solo eventos destacados]]></item>
 		<item name="calendar.event.condition.activeUserIsParticipant"><![CDATA[El usuario activo es el participante]]></item>
 		<item name="calendar.event.date.cancel"><![CDATA[Cancelar fecha]]></item>
