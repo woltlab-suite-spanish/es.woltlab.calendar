@@ -378,9 +378,9 @@
 		<item name="wcf.acp.option.calendar_index_enable_stats"><![CDATA[Mostrar estadísticas del calendario]]></item>
 		<item name="wcf.acp.option.calendar_message_sidebar_enable_user_events"><![CDATA[Mostrar el número de eventos del autor]]></item>
 		<item name="wcf.acp.option.calendar_max_event_length"><![CDATA[Período de tiempo máximo]]></item>
-		<item name="wcf.acp.option.calendar_max_event_length.description"><![CDATA[Los eventos pueden tener lugar durante los siguientes días.]]></item>
+		<item name="wcf.acp.option.calendar_max_event_length.description"><![CDATA[Los eventos pueden durar hasta el número de días indicado.]]></item>
 		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle.description"><![CDATA[Los eventos se eliminan de la papelera en los días siguientes. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle.description"><![CDATA[Los eventos se eliminan de la papelera después de los días indicados. Utiliza 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.calendar_event_invite_group_max_size"><![CDATA[Tamaño máximo de los grupos de usuarios invitables]]></item>
 		<item name="wcf.acp.option.calendar_event_invite_group_max_size.description"><![CDATA[Ten cuidado al invitar a grupos de usuarios grandes, ya que requiere el envío de más notificaciones por correo electrónico. Utiliza un valor conservador, de lo contrario, el proceso podría interrumpirse.]]></item>
 		<item name="wcf.acp.option.calendar_enable_birthday_week"><![CDATA[Mostrar cumpleaños en la vista de semana]]></item>
