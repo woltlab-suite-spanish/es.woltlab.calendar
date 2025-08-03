@@ -39,7 +39,7 @@
 		<item name="calendar.category.export.url"><![CDATA[URL]]></item>
 		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirte con tu software de calendario favorito.]]></item>
 		<item name="calendar.category.export.url.participant"><![CDATA[URL (solo eventos participantes)]]></item>
-		<item name="calendar.category.export.url.participant.description"><![CDATA[Restringe la lista a los eventos en los que participar o puedes participar.]]></item>
+		<item name="calendar.category.export.url.participant.description"><![CDATA[Restringe la lista a los eventos en los que participas o puedes participar.]]></item>
 		<item name="calendar.category.eventColor"><![CDATA[Color]]></item>
 		<item name="calendar.category.eventColor.button.reset"><![CDATA[Restablecer color]]></item>
 	</category>
