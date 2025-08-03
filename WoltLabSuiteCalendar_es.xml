@@ -86,7 +86,7 @@
 		<item name="calendar.event.date.participation.message.description"><![CDATA[Opcionalmente, puede escribir un comentario que se mostrará en la lista de participantes.]]></item>
 		<item name="calendar.event.date.participation.notChangeable"><![CDATA[Este evento no te permite cambiar tu decisión.]]></item>
 		<item name="calendar.event.date.participation.invite"><![CDATA[Invitar]]></item>
-		<item name="calendar.event.date.participation.invite.description"><![CDATA[Puedes invitar a usuarios adicionales a este evento. Separa multiples usuarios con una coma.]]></item>
+		<item name="calendar.event.date.participation.invite.description"><![CDATA[Puedes invitar a usuarios adicionales a este evento. Separa múltiples usuarios con una coma.]]></item>
 		<item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}Los siguientes usuarios son desconocidos: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}Los siguientes usuarios ya son participantes: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
 		<item name="calendar.event.date.participation.inviteUsers"><![CDATA[Invitar usuarios]]></item>
 		<item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[No se han encontrado los siguientes usuarios: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
