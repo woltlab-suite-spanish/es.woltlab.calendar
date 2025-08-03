@@ -83,7 +83,7 @@
 		<item name="calendar.event.date.participation.decision.maybe"><![CDATA[Tal vez]]></item>
 		<item name="calendar.event.date.participation.companions"><![CDATA[Acompañantes]]></item>
 		<item name="calendar.event.date.participation.message"><![CDATA[Comentario]]></item>
-		<item name="calendar.event.date.participation.message.description"><![CDATA[Opcionalmente, puede escribir un comentario que se mostrará en la lista de participantes.]]></item>
+		<item name="calendar.event.date.participation.message.description"><![CDATA[Opcionalmente, puedes escribir un comentario que se mostrará en la lista de participantes.]]></item>
 		<item name="calendar.event.date.participation.notChangeable"><![CDATA[Este evento no te permite cambiar tu decisión.]]></item>
 		<item name="calendar.event.date.participation.invite"><![CDATA[Invitar]]></item>
 		<item name="calendar.event.date.participation.invite.description"><![CDATA[Puedes invitar a usuarios adicionales a este evento. Separa múltiples usuarios con una coma.]]></item>
