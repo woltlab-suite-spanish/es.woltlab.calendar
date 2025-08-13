@@ -27,7 +27,7 @@
 		<item name="calendar.acp.eventImport.url.description"><![CDATA[Introduce aquí la URL de importación del evento.]]></item>
 		<item name="calendar.acp.eventImport.category.description"><![CDATA[Los eventos se crearán en la categoría seleccionada.]]></item>
 		<item name="calendar.acp.eventImport.language.description"><![CDATA[Los eventos se crearán con el idioma seleccionado.]]></item>
-		<item name="calendar.acp.eventImport.username.description"><![CDATA[Los eventos se crearán utilizando el autor introducido.]]></item>
+		<item name="calendar.acp.eventImport.username.description"><![CDATA[Los eventos se crearán usando el autor introducido.]]></item>
 		<item name="calendar.acp.eventImport.error.noCategories"><![CDATA[Por favor, <a href="{link controller='CategoryAdd' application='calendar'}{/link}">añade una categoría</a> antes de crear importaciones de eventos.]]></item>
 		<item name="calendar.acp.eventImport.errorMessage"><![CDATA[Se ha producido un error durante la última ejecución.]]></item>
 		<item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[Se ha producido el siguiente error durante la última ejecución:]]></item>
@@ -37,7 +37,7 @@
 		<item name="calendar.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los eventos que solo pertenezcan a esta categoría serán eliminados.]]></item>
 		<item name="calendar.category.export.download"><![CDATA[Descargar como archivo]]></item>
 		<item name="calendar.category.export.url"><![CDATA[URL]]></item>
-		<item name="calendar.category.export.url.description"><![CDATA[Puedes utilizar esta URL para suscribirte con tu software de calendario favorito.]]></item>
+		<item name="calendar.category.export.url.description"><![CDATA[Puedes usar esta URL para suscribirte con tu software de calendario favorito.]]></item>
 		<item name="calendar.category.export.url.participant"><![CDATA[URL (solo eventos participantes)]]></item>
 		<item name="calendar.category.export.url.participant.description"><![CDATA[Restringe la lista a los eventos en los que participas o puedes participar.]]></item>
 		<item name="calendar.category.eventColor"><![CDATA[Color]]></item>
@@ -150,7 +150,7 @@
 		<item name="calendar.event.participation.isChangeable"><![CDATA[Los participantes pueden cambiar su decisión]]></item>
 		<item name="calendar.event.participation.isChangeable.description"><![CDATA[Los participantes pueden cambiar su decisión en cualquier momento.]]></item>
 		<item name="calendar.event.participation.maxParticipants"><![CDATA[Participantes máximos]]></item>
-		<item name="calendar.event.participation.maxParticipants.description"><![CDATA[El número máximo de participantes. Utiliza 0 para infinito.]]></item>
+		<item name="calendar.event.participation.maxParticipants.description"><![CDATA[El número máximo de participantes. Usa 0 para infinito.]]></item>
 		<item name="calendar.event.participation.maxCompanions"><![CDATA[Acompañantes máximos]]></item>
 		<item name="calendar.event.participation.maxCompanions.description"><![CDATA[El número máximo de acompañantes permitido por participante.]]></item>
 		<item name="calendar.event.participation.endTime"><![CDATA[Fecha límite]]></item>
@@ -251,7 +251,7 @@
 		<item name="calendar.event.import.importURL"><![CDATA[Descargar archivo (URL)]]></item>
 		<item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[Ha ocurrido un error desconocido durante la descarga.]]></item>
 		<item name="calendar.event.import.success"><![CDATA[{#$success} evento{if $success != 1}s{/if} {if $success == 1}ha sido importado{else}han sido importados{/if}.]]></item>
-		<item name="calendar.event.preset"><![CDATA[El evento <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> está siendo utilizado como un evento preestablecido, los campos de abajo han sido preintroducidos.]]></item>
+		<item name="calendar.event.preset"><![CDATA[El evento <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> está siendo usado como un evento preestablecido, los campos de abajo han sido preintroducidos.]]></item>
 		<item name="calendar.event.useAsPreset"><![CDATA[Usar como preestablecido]]></item>
 		<item name="calendar.event.featured"><![CDATA[Destacado]]></item>
 		<item name="calendar.event.monthlyView"><![CDATA[Vista de mes]]></item>
@@ -380,9 +380,9 @@
 		<item name="wcf.acp.option.calendar_max_event_length"><![CDATA[Período de tiempo máximo]]></item>
 		<item name="wcf.acp.option.calendar_max_event_length.description"><![CDATA[Los eventos pueden durar hasta el número de días indicado.]]></item>
 		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle.description"><![CDATA[Los eventos se eliminan de la papelera después de los días indicados. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.calendar_event_empty_recycle_bin_cycle.description"><![CDATA[Los eventos se eliminan de la papelera después de los días indicados. Usa 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.calendar_event_invite_group_max_size"><![CDATA[Tamaño máximo de los grupos de usuarios invitables]]></item>
-		<item name="wcf.acp.option.calendar_event_invite_group_max_size.description"><![CDATA[Ten cuidado al invitar a grupos de usuarios grandes, ya que requiere el envío de más notificaciones por correo electrónico. Utiliza un valor conservador, de lo contrario, el proceso podría interrumpirse.]]></item>
+		<item name="wcf.acp.option.calendar_event_invite_group_max_size.description"><![CDATA[Ten cuidado al invitar a grupos de usuarios grandes, ya que requiere el envío de más notificaciones por correo electrónico. Usa un valor conservador, de lo contrario, el proceso podría interrumpirse.]]></item>
 		<item name="wcf.acp.option.calendar_enable_birthday_week"><![CDATA[Mostrar cumpleaños en la vista de semana]]></item>
 		<item name="wcf.acp.option.calendar_enable_birthday_day"><![CDATA[Mostrar cumpleaños en la vista de día]]></item>
 	</category>
