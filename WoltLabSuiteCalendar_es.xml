@@ -162,7 +162,7 @@
 		<item name="calendar.event.events"><![CDATA[Eventos]]></item>
 		<item name="calendar.event.searchEvents"><![CDATA[Buscar eventos]]></item>
 		<item name="calendar.event.day.count"><![CDATA[{#$eventCount} evento{if $eventCount != 1}s{/if}]]></item>
-		<item name="calendar.event.date.next"><![CDATA[Next Repetition]]></item>
+		<item name="calendar.event.date.next"><![CDATA[Siguiente repetición]]></item>
 		<item name="calendar.event.date.previous"><![CDATA[Repetición anterior]]></item>
 		<item name="calendar.event.log.trash.summary"><![CDATA[Evento eliminado por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time})]]></item>
 		<item name="calendar.event.delete"><![CDATA[Eliminar]]></item>
