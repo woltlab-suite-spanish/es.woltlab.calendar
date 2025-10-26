@@ -157,7 +157,7 @@
 		<item name="calendar.event.participation.endTime.expired"><![CDATA[La fecha límite para este evento ya ha pasado.]]></item>
 		<item name="calendar.event.participation.endTime.value"><![CDATA[{@$eventDate->getParticipationEndTime()|plainTime}{if $eventDate->getParticipationEndTime() < TIME_NOW}<br>(Expirado){/if}]]></item>
 		<item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}Fecha límite: {$eventDate->getParticipationEndTime()|dateDiff}{else}La fecha límite ha pasado{/if}]]></item>
-		<item name="calendar.event.participation.maxParticipants.info"><![CDATA[Only {$eventDate->getEvent()->maxParticipants - $eventDate->participants} seat{if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}s{/if} left]]></item>
+		<item name="calendar.event.participation.maxParticipants.info"><![{if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}Solo quedan {$eventDate->getEvent()->maxParticipants - $eventDate->participants} plazas{else}Solo queda {$eventDate->getEvent()->maxParticipants - $eventDate->participants} plaza{/if}]]></item>
 		<item name="calendar.event.userEvents"><![CDATA[Eventos de {$user->username}]]></item>
 		<item name="calendar.event.events"><![CDATA[Eventos]]></item>
 		<item name="calendar.event.searchEvents"><![CDATA[Buscar eventos]]></item>
