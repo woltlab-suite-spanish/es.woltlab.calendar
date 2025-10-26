@@ -154,7 +154,7 @@
 		<item name="calendar.event.participation.maxCompanions"><![CDATA[Acompañantes máximos]]></item>
 		<item name="calendar.event.participation.maxCompanions.description"><![CDATA[El número máximo de acompañantes permitido por participante.]]></item>
 		<item name="calendar.event.participation.endTime"><![CDATA[Fecha límite]]></item>
-		<item name="calendar.event.participation.endTime.expired"><![CDATA[La fecha límite para este acto ya ha pasado.]]></item>
+		<item name="calendar.event.participation.endTime.expired"><![CDATA[La fecha límite para este evento ya ha pasado.]]></item>
 		<item name="calendar.event.participation.endTime.value"><![CDATA[{@$eventDate->getParticipationEndTime()|plainTime}{if $eventDate->getParticipationEndTime() < TIME_NOW}<br>(Expirado){/if}]]></item>
 		<item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}Fecha límite: {$eventDate->getParticipationEndTime()|dateDiff}{else}La fecha límite ha pasado{/if}]]></item>
 		<item name="calendar.event.participation.maxParticipants.info"><![CDATA[Only {$eventDate->getEvent()->maxParticipants - $eventDate->participants} seat{if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}s{/if} left]]></item>
