@@ -16,6 +16,7 @@
 		<item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[El campo de opción solo está disponible para los eventos de las categorías seleccionadas. Si no se selecciona ninguna categoría, el campo de opción está disponible en todas las categorías. Después de guardar, las categorías seleccionadas ya no se pueden deseleccionar.]]></item>
 		<item name="calendar.acp.event.option.edit"><![CDATA[Editar campo de opción]]></item>
 		<item name="calendar.acp.event.option.list"><![CDATA[Campos de opción]]></item>
+		<item name="calendar.acp.event.option.typeData"><![CDATA[Propiedades]]></item>
 	</category>
 	<category name="calendar.acp.eventImport">
 		<item name="calendar.acp.eventImport.list"><![CDATA[Importaciones de eventos]]></item>
@@ -31,6 +32,7 @@
 		<item name="calendar.acp.eventImport.error.noCategories"><![CDATA[Por favor, <a href="{link controller='CategoryAdd' application='calendar'}{/link}">añade una categoría</a> antes de crear importaciones de eventos.]]></item>
 		<item name="calendar.acp.eventImport.errorMessage"><![CDATA[Se ha producido un error durante la última ejecución.]]></item>
 		<item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[Se ha producido el siguiente error durante la última ejecución:]]></item>
+		<item name="calendar.acp.eventImport.disable"><![CDATA[Desactivar importación de eventos]]></item>
 	</category>
 	<category name="calendar.category">
 		<item name="calendar.category.button.export"><![CDATA[Exportar eventos (iCal)]]></item>
@@ -86,7 +88,7 @@
 		<item name="calendar.event.date.participation.message.description"><![CDATA[Opcionalmente, puedes escribir un comentario que se mostrará en la lista de participantes.]]></item>
 		<item name="calendar.event.date.participation.notChangeable"><![CDATA[Este evento no te permite cambiar tu decisión.]]></item>
 		<item name="calendar.event.date.participation.invite"><![CDATA[Invitar]]></item>
-		<item name="calendar.event.date.participation.invite.description"><![CDATA[Puedes invitar a usuarios adicionales a este evento. Separa múltiples usuarios con una coma.]]></item>
+		<item name="calendar.event.date.participation.invite.description"><![CDATA[Puedes invitar a usuarios adicionales a este evento. Introduce múltiples usuarios separados por comas.]]></item>
 		<item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}Los siguientes usuarios son desconocidos: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}Los siguientes usuarios ya son participantes: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
 		<item name="calendar.event.date.participation.inviteUsers"><![CDATA[Invitar usuarios]]></item>
 		<item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[No se han encontrado los siguientes usuarios: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
@@ -99,6 +101,7 @@
 		<item name="calendar.event.date.isParticipant.maybe"><![CDATA[Aún no te has comprometido totalmente a participar en este evento.]]></item>
 		<item name="calendar.event.date.isParticipant.no"><![CDATA[Has declinado participar en este evento.]]></item>
 		<item name="calendar.event.date.isParticipant.invited"><![CDATA[Has sido invitado a participar en este evento.]]></item>
+		<item name="calendar.event.date.repeat"><![CDATA[Repetición]]></item>
 		<item name="calendar.event.date.repeat.enable"><![CDATA[Activar repetición]]></item>
 		<item name="calendar.event.date.repeat.description"><![CDATA[Repite este evento basado en un patrón.]]></item>
 		<item name="calendar.event.date.repeat.type"><![CDATA[Tipo]]></item>
@@ -109,12 +112,13 @@
 		<item name="calendar.event.date.repeat.type.yearlyByDayOfMonth"><![CDATA[Anualmente (día del mes)]]></item>
 		<item name="calendar.event.date.repeat.type.yearlyByDayOfWeek"><![CDATA[Anualmente (día de la semana)]]></item>
 		<item name="calendar.event.date.repeat.interval"><![CDATA[Intervalo]]></item>
-		<item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[Repetir todos los días]]></item>
-		<item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[Repetir todas las semanas]]></item>
-		<item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[Repetir todos los meses]]></item>
-		<item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[Repetir todos los años]]></item>
+		<item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[Repetir todos los días.]]></item>
+		<item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[Repetir todas las semanas.]]></item>
+		<item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[Repetir todos los meses.]]></item>
+		<item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[Repetir todos los años.]]></item>
 		<item name="calendar.event.date.repeat.byDay"><![CDATA[Día de la semana]]></item>
 		<item name="calendar.event.date.repeat.byMonthDay"><![CDATA[Día del mes]]></item>
+		<item name="calendar.event.date.repeat.dayOffset"><![CDATA[El]]></item>
 		<item name="calendar.event.date.repeat.dayOffset.first"><![CDATA[Primero]]></item>
 		<item name="calendar.event.date.repeat.dayOffset.second"><![CDATA[Segundo]]></item>
 		<item name="calendar.event.date.repeat.dayOffset.third"><![CDATA[Tercero]]></item>
@@ -228,14 +232,12 @@
 		<item name="calendar.event.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu evento <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
 		<item name="calendar.event.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha reaccionado a tu evento <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
 		<item name="calendar.event.date.showAll"><![CDATA[[Mostrar todos los eventos]]]></item>
-		<item name="calendar.event.eventParticipations"><![CDATA[Event Participation]]></item>
 		<item name="calendar.event.eventParticipations.decision.yes"><![CDATA[Participante]]></item>
 		<item name="calendar.event.eventParticipations.decision.maybe"><![CDATA[Indeciso]]></item>
 		<item name="calendar.event.eventParticipations.decision.no"><![CDATA[Cancelado]]></item>
 		<item name="calendar.event.eventParticipations.decision.invited"><![CDATA[Invitado]]></item>
 		<item name="calendar.event.coordinates"><![CDATA[Coordenadas]]></item>
 		<item name="calendar.event.coordinates.enable"><![CDATA[Especificar ubicación del evento]]></item>
-		<item name="calendar.event.coordinates.description"><![CDATA[Puedes especificar una ubicación para este evento.]]></item>
 		<item name="calendar.event.coordinates.customLocation"><![CDATA[Ubicación del evento]]></item>
 		<item name="calendar.event.coordinates.map.enable"><![CDATA[Activar mapa]]></item>
 		<item name="calendar.event.coordinates.location"><![CDATA[Ubicación]]></item>
@@ -291,9 +293,9 @@
 	<category name="calendar.index">
 		<item name="calendar.index.stats"><![CDATA[Estadísticas]]></item>
 		<item name="calendar.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[authors]} autor{if $stats[authors] != 1}es{/if}</li>
-<li>{#$stats[events]} evento{if $stats[events] != 1}s{/if} ({#$stats[eventsPerDay]} evento{if $stats[eventsPerDay] != 1}s{/if} por día)</li>
-<li>{#$stats[comments]} comentario{if $stats[comments] != 1}s{/if}</li>
+<li>{plural value=$calendarStats->authors one='1 autor' other='# autores'}</li>
+<li>{plural value=$calendarStats->events one='1 evento' other='# eventos'} ({plural value=$calendarStats->eventsPerDay one='1 evento' other='# eventos'} por día)</li>
+<li>{plural value=$calendarStats->comments one='1 comentario' other='# comentarios'}</li>
 </ul>]]></item>
 	</category>
 	<category name="wcf.acl.option">
@@ -431,7 +433,6 @@
 	<category name="wcf.user">
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.calendar.activityPointEvent.event"><![CDATA[Eventos]]></item>
 		<item name="wcf.user.boxList.description.calendarEvents"><![CDATA[{#$boxUser->calendarEvents} evento{if $boxUser->calendarEvents != 1}s{/if}]]></item>
-		<item name="wcf.user.sortField.calendarEvents"><![CDATA[Eventos]]></item>
 	</category>
 	<category name="wcf.user.condition">
 		<item name="wcf.user.condition.calendarEvents"><![CDATA[Eventos]]></item>
@@ -475,90 +476,7 @@
 	</category>
 </import>
 <delete>
-	<item name="calendar.acp.eventImport.delete.confirmMessage"/>
-	<item name="calendar.acp.event.option.delete.confirmMessage"/>
-	<item name="calendar.category.markAllAsRead"/>
-	<item name="calendar.event.categories.error.tooMany"/>
-	<item name="calendar.event.date.canceled.notification.mail"/>
-	<item name="calendar.event.date.comment.notification.mail"/>
-	<item name="calendar.event.date.comment.notification.mail.stacked"/>
-	<item name="calendar.event.date.commentResponse.notification.mail"/>
-	<item name="calendar.event.date.commentResponse.notification.mail.stacked"/>
-	<item name="calendar.event.date.commentResponseOwner.notification.mail"/>
-	<item name="calendar.event.date.commentResponseOwner.notification.mail.stacked"/>
-	<item name="calendar.event.date.invite.notification.mail"/>
-	<item name="calendar.event.date.notification.mail"/>
-	<item name="calendar.event.date.participation.notification.mail"/>
-	<item name="calendar.event.date.participation.notification.mail.stacked"/>
-	<item name="calendar.event.day.title"/>
-	<item name="calendar.event.eventColor"/>
-	<item name="calendar.event.eventColor.description"/>
-	<item name="calendar.event.eventColor.enable"/>
-	<item name="calendar.event.import.importURL.error.uploadFailed"/>
-	<item name="calendar.event.showUserEvents"/>
-	<item name="calendar.event.sortField.time"/>
-	<item name="calendar.event.views"/>
-	<item name="calendar.event.views.count"/>
-	<item name="calendar.header.menu.calendar"/>
-	<item name="calendar.header.menu.calendar.daily"/>
-	<item name="calendar.header.menu.calendar.participations"/>
-	<item name="calendar.header.menu.calendar.upcomingEvents"/>
-	<item name="calendar.header.menu.calendar.weekly"/>
-	<item name="calendar.header.menu.map"/>
-	<item name="calendar.header.menu.myEvents"/>
-	<item name="calendar.index.copyright"/>
-	<item name="calendar.index.evaluation"/>
-	<item name="calendar.search.categories"/>
-	<item name="calendar.user.usersOnline.location.CalendarPage"/>
-	<item name="calendar.user.usersOnline.location.DailyPage"/>
-	<item name="calendar.user.usersOnline.location.EventAddForm"/>
-	<item name="calendar.user.usersOnline.location.EventEditForm"/>
-	<item name="calendar.user.usersOnline.location.EventPage"/>
-	<item name="calendar.user.usersOnline.location.UpcomingEventListPage"/>
-	<item name="calendar.user.usersOnline.location.WeeklyPage"/>
-	<item name="wcf.acp.group.option.user.calendar.canSetEventColor"/>
-	<item name="wcf.acp.index.system.software.calendarVersion"/>
-	<item name="wcf.acp.option.calendar_dashboard_sidebar_featured_events_items"/>
-	<item name="wcf.acp.option.calendar_dashboard_sidebar_featured_events_items_period"/>
-	<item name="wcf.acp.option.calendar_dashboard_sidebar_featured_events_items_period.description"/>
-	<item name="wcf.acp.option.calendar_dashboard_sidebar_upcoming_events_items"/>
-	<item name="wcf.acp.option.calendar_dashboard_upcoming_events_items"/>
-	<item name="wcf.acp.option.calendar_dashboard_upcoming_events_items_categories"/>
-	<item name="wcf.acp.option.calendar_dashboard_upcoming_events_items_categories.description"/>
-	<item name="wcf.acp.option.calendar_dashboard_upcoming_events_items_period"/>
-	<item name="wcf.acp.option.calendar_dashboard_upcoming_events_items_period.description"/>
-	<item name="wcf.acp.option.calendar_event_max_categories"/>
-	<item name="wcf.acp.option.calendar_event_max_categories.description"/>
-	<item name="wcf.acp.option.calendar_index_enable_online_list"/>
-	<item name="wcf.acp.option.calendar_user_profile_enable_user_events"/>
-	<item name="wcf.acp.option.category.dashboard.content.upcomingEvents"/>
-	<item name="wcf.acp.option.category.dashboard.sidebar.featuredEvents"/>
-	<item name="wcf.acp.option.category.dashboard.sidebar.upcomingEvents"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.calendar.event"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.calendar.event.date"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.calendar.event.date.description"/>
-	<item name="wcf.acp.rebuildData.com.woltlab.calendar.event.description"/>
-	<item name="wcf.dashboard.box.com.woltlab.calendar.content.upcomingEvents"/>
-	<item name="wcf.dashboard.box.com.woltlab.calendar.featuredEvents"/>
-	<item name="wcf.dashboard.box.com.woltlab.calendar.tagCloud"/>
-	<item name="wcf.dashboard.box.com.woltlab.calendar.upcomingEvents"/>
-	<item name="wcf.dashboard.objectType.com.woltlab.calendar.CalendarPage"/>
-	<item name="wcf.dashboard.objectType.com.woltlab.calendar.EventListPage"/>
-	<item name="wcf.page.category.com.woltlab.calendar"/>
-	<item name="wcf.page.com.woltlab.calendar.CalendarPage"/>
-	<item name="wcf.page.com.woltlab.calendar.DailyPage"/>
-	<item name="wcf.page.com.woltlab.calendar.EventAddForm"/>
-	<item name="wcf.page.com.woltlab.calendar.EventEditForm"/>
-	<item name="wcf.page.com.woltlab.calendar.EventImportForm"/>
-	<item name="wcf.page.com.woltlab.calendar.EventPage"/>
-	<item name="wcf.page.com.woltlab.calendar.EventParticipationListPage"/>
-	<item name="wcf.page.com.woltlab.calendar.MapPage"/>
-	<item name="wcf.page.com.woltlab.calendar.UpcomingEventListPage"/>
-	<item name="wcf.page.com.woltlab.calendar.WeeklyPage"/>
-	<item name="wcf.page.sitemap.calendar"/>
-	<item name="wcf.user.objectWatch.enableNotification.com.woltlab.calendar.category"/>
-	<item name="wcf.user.objectWatch.subscribe.com.woltlab.calendar.category"/>
-	<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.calendar.category"/>
-	<item name="calendar.event.coordinates.locationSearch"/>
+	<item name="calendar.event.coordinates.description"/>
+	<item name="wcf.user.sortField.calendarEvents"/>
 </delete>
 </language>
