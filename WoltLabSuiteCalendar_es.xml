@@ -143,7 +143,7 @@
 		<item name="calendar.event.participant.count"><![CDATA[{#$participants} personas]]></item>
 		<item name="calendar.event.message"><![CDATA[Descripción]]></item>
 		<item name="calendar.event.participation"><![CDATA[Participación]]></item>
-		<item name="calendar.event.participation.enable"><![CDATA[Habilitar participación]]></item>
+		<item name="calendar.event.participation.enable"><![CDATA[Activar participación]]></item>
 		<item name="calendar.event.participation.description"><![CDATA[Permite a los usuarios participar en este evento.]]></item>
 		<item name="calendar.event.participation.isPublic"><![CDATA[Lista pública de participantes]]></item>
 		<item name="calendar.event.participation.isPublic.description"><![CDATA[La lista de participantes será visible para todos.]]></item>
