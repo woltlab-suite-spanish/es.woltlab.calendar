@@ -99,7 +99,7 @@
 		<item name="calendar.event.date.isParticipant.maybe"><![CDATA[Aún no te has comprometido totalmente a participar en este evento.]]></item>
 		<item name="calendar.event.date.isParticipant.no"><![CDATA[Has declinado participar en este evento.]]></item>
 		<item name="calendar.event.date.isParticipant.invited"><![CDATA[Has sido invitado a participar en este evento.]]></item>
-		<item name="calendar.event.date.repeat.enable"><![CDATA[Habilitar repetición]]></item>
+		<item name="calendar.event.date.repeat.enable"><![CDATA[Activar repetición]]></item>
 		<item name="calendar.event.date.repeat.description"><![CDATA[Repite este evento basado en un patrón.]]></item>
 		<item name="calendar.event.date.repeat.type"><![CDATA[Tipo]]></item>
 		<item name="calendar.event.date.repeat.type.daily"><![CDATA[A diario]]></item>
