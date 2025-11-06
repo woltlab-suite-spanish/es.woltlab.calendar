@@ -240,7 +240,7 @@
 		<item name="calendar.event.coordinates.map.enable"><![CDATA[Habilitar mapa]]></item>
 		<item name="calendar.event.coordinates.location"><![CDATA[Ubicación]]></item>
 		<item name="calendar.event.coordinates.location.description"><![CDATA[Escribe la ubicación y selecciona un resultado entre las sugerencias.]]></item>
-		<item name="calendar.event.enableComments"><![CDATA[Habilitar comentarios]]></item>
+		<item name="calendar.event.enableComments"><![CDATA[Activar comentarios]]></item>
 		<item name="calendar.event.enableComments.description"><![CDATA[Permite a los usuarios comentar este evento.]]></item>
 		<item name="calendar.event.map"><![CDATA[Ubicación]]></item>
 		<item name="calendar.event.eventsInfoWindow"><![CDATA[Múltiples eventos]]></item>
