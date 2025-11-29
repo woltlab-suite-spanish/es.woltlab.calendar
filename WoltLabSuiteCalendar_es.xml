@@ -450,7 +450,7 @@
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.event.event"><![CDATA[Notificarme nuevos eventos en categorías suscritas]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.change"><![CDATA[Notificarme eventos cambiados (participación)]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.change"><![CDATA[Notificarme eventos modificados (participación)]]></item>
 	</category>
 	<category name="wcf.user.option">
 		<item name="wcf.user.option.calendarEventNotificationTime"><![CDATA[Recordatorio de evento]]></item>
