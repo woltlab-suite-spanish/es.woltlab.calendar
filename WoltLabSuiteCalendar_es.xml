@@ -445,7 +445,7 @@
 		<item name="wcf.user.notification.com.woltlab.calendar.event.date.participation.newParticipant"><![CDATA[Notificarme nuevos participantes en mis eventos]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.notification.comment"><![CDATA[Notificarme nuevos comentarios en mis eventos]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponse"><![CDATA[Notificarme nuevas respuestas a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios sobre mis eventos]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios en mis eventos]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.likeableEvent.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis eventos]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
