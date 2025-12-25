@@ -439,18 +439,18 @@
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.calendar"><![CDATA[Calendario]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.canceled"><![CDATA[Notificarme eventos cancelados (participación)]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.reminder"><![CDATA[Notificarme próximos eventos (participación o categorías suscritas)]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.invite"><![CDATA[Notificarme invitaciones a eventos]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.participation.newParticipant"><![CDATA[Notificarme nuevos participantes en mis eventos]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.notification.comment"><![CDATA[Notificarme nuevos comentarios en mis eventos]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponse"><![CDATA[Notificarme nuevas respuestas a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios en mis eventos]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.likeableEvent.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis eventos]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.event"><![CDATA[Notificarme nuevos eventos en categorías suscritas]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.date.change"><![CDATA[Notificarme eventos modificados (participación)]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.canceled"><![CDATA[Cancelación de evento (participación)]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.reminder"><![CDATA[Próximo evento (participación o categoría suscrita)]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.invite"><![CDATA[Invitación a evento]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.participation.newParticipant"><![CDATA[Nuevo participante en tu evento]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.notification.comment"><![CDATA[Nuevo comentario en tu evento]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponse"><![CDATA[Nueva respuesta a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.notification.commentResponseOwner"><![CDATA[Nueva respuesta a un comentario en tu evento]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.likeableEvent.notification.like"><![CDATA[Reacción a tu evento]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.like.notification.like"><![CDATA[Reacción a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.like.notification.like"><![CDATA[Reacción a tu respuesta a un comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.event"><![CDATA[Nuevo evento en categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.date.change"><![CDATA[Evento modificado (participación)]]></item>
 	</category>
 	<category name="wcf.user.option">
 		<item name="wcf.user.option.calendarEventNotificationTime"><![CDATA[Recordatorio de evento]]></item>
