@@ -449,7 +449,7 @@
 		<item name="wcf.user.notification.com.woltlab.calendar.likeableEvent.notification.like"><![CDATA[Reacción a tu evento]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.like.notification.like"><![CDATA[Reacción a tu comentario]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.eventDateComment.response.like.notification.like"><![CDATA[Reacción a tu respuesta a un comentario]]></item>
-		<item name="wcf.user.notification.com.woltlab.calendar.event.event"><![CDATA[Nuevo evento en categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.calendar.event.event"><![CDATA[Nuevo evento en una categoría suscrita]]></item>
 		<item name="wcf.user.notification.com.woltlab.calendar.event.date.change"><![CDATA[Evento modificado (participación)]]></item>
 	</category>
 	<category name="wcf.user.option">
@@ -477,6 +477,7 @@
 </import>
 <delete>
 	<item name="calendar.event.coordinates.description"/>
+	<item name="calendar.event.eventParticipations"/>
 	<item name="wcf.user.sortField.calendarEvents"/>
 </delete>
 </language>
